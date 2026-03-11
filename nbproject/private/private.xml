@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="Group 20250910-08:34:42">
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/src/java/controller/UpdateAccountController.java</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/index.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/src/java/controller/RegisterController.java</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/src/java/dao/BikeDAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/views/customer/bikes.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/src/java/model/Bike.java</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/views/customer/changepassword.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/views/customer/profile.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/src/java/controller/BikeController.java</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/src/java/controller/HomeController.java</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/views/customer/sidebar.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/views/customer/details.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/src/java/dao/AccountDAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/views/customer/booking.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/src/java/controller/AuthenticationController.java</file>
+            <file>file:/C:/Users/Admin/Documents/Ky4/PRJ301/Project/Motogo/web/views/customer/forgetpassword.jsp</file>
+        </group>
+    </open-files>
+</project-private>

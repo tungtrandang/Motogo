@@ -1,0 +1,326 @@
+/* 1. BIẾN VÀ CẤU TRÚC CƠ BẢN */
+:root {
+    --primary-color: #FF6B35;
+    --secondary-color: #004E89;
+    --dark-color: #1A1A2E;
+    --light-color: #F7F7F7;
+    --accent-color: #FFD23F;
+    --font-display: 'Oswald', sans-serif;
+    --font-body: 'Manrope', sans-serif;
+    --transition: background 0.3s ease, color 0.3s ease; /* Chỉ giữ transition cho màu sắc */
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* 2. HEADER & NAVIGATION */
+.navbar {
+    background: white !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0.8rem 0;
+}
+.avatar-container {
+    width: 40px;      /* Kích thước khung */
+    height: 40px;     /* Kích thước khung */
+    border-radius: 50%;
+    overflow: hidden; /* Cắt phần ảnh thừa bên ngoài vòng tròn */
+    border: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Hiện nền xám nếu ảnh chưa load xong */
+}
+
+.navbar-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Quan trọng: Giữ tỉ lệ ảnh, không bị méo */
+    display: block;
+}
+.navbar-brand.logo-text {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--dark-color) !important;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Dropdown Menu Custom */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+/* 3. PAGE HEADER & FOOTER */
+.page-header {
+    background: linear-gradient(rgba(0, 78, 137, 0.9), rgba(0, 78, 137, 0.9)),
+        url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-title {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: var(--dark-color);
+    color: rgba(255,255,255,0.8);
+    padding: 60px 0 20px;
+}
+
+.footer-title {
+    color: var(--accent-color);
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.footer-icon-link {
+    color: white;
+    transition: var(--transition);
+    opacity: 0.8;
+}
+
+.footer-icon-link:hover {
+    color: var(--primary-color);
+    opacity: 1;
+    /* Đã bỏ translateY */
+}
+
+.footer .footer-nav-link {
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+.back-link {
+    text-decoration: none;
+    color: var(--secondary-color); /* Màu xanh đậm */
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+.footer-nav-link:hover {
+    color: var(--primary-color);
+    /* Đã bỏ padding-left */
+}
+body {
+    font-family: var(--font-body);
+    background: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+
+    /* BƯỚC 2: THÊM 3 DÒNG NÀY ĐỂ ÉP FOOTER XUỐNG ĐÁY */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* 4. BUTTONS NÂNG CAO */
+.btn-primary-custom, .btn-secondary-custom {
+    border-radius: 50px;
+    border: none;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary-custom {
+    background: var(--primary-color);
+    color: white;
+}
+.btn-primary-custom:hover {
+    background: #e85a2a;
+    color: white;
+} /* Đã bỏ transform: scale */
+
+.btn-secondary-custom {
+    background: var(--secondary-color);
+    color: white;
+}
+.btn-secondary-custom:hover {
+    background: #003d6b;
+    color: white;
+} /* Đã bỏ transform: scale */
+
+/* 5. BIKE CARD & TRẠNG THÁI  */
+.bike-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+.bike-img {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bike-body {
+    padding: 1.5rem;
+}
+.bike-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+.bike-price {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.badge-available {
+    background: #d4edda;
+    color: #155724;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+.badge-busy {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* 6. SECTION TITLE */
+.section-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+.sidebar-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.sidebar-avatar-wrapper {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    position: relative;
+}
+
+.sidebar-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    border-radius: 15px;
+    transition: var(--transition), transform 0.2s ease;
+}
+
+.sidebar-link i {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    width: 25px;
+    text-align: center;
+}
+
+.sidebar-link:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.sidebar-link.active {
+    background: var(--primary-color) !important;
+    color: white !important;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
+
+.sidebar-link.text-danger:hover {
+    background: #fff5f5;
+    color: #dc3545 !important;
+}
+
+.status-indicator {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 18px;
+    height: 18px;
+    background: #28a745;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
